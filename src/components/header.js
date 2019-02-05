@@ -2,6 +2,8 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import gatsbyIcon from "../images/gatsby-icon.png"
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
@@ -16,17 +18,24 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+      {/* Title / logo */}
+      <span style={{display: 'flex', alignItems:  'center'}}>
+        <img 
+        src={gatsbyIcon} 
+        alt="Gatsby Logo" 
+        style= {{width: "50px", margin: '0 5px', borderRadius: '50%', border: '3px solid orange', }} />
+        <h1 style={{ margin: 0 }}>
+          <Link
+            to="/"
+            style={{
+              color: `white`,
+              textDecoration: `none`,
+            }}
+          >
+            {siteTitle}
+          </Link>
+        </h1>
+      </span>
     </div>
   </header>
 )
