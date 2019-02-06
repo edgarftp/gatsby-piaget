@@ -1,5 +1,6 @@
 backend:
-  name: gatsby-curso-prueba
+  name: github
+  repo: edgarftp/gatsby-piaget
 
 media_folder: static/assets
 public_folder: assets
