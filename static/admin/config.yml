@@ -1,13 +1,13 @@
 backend:
-  name: test-repo
+  name: gatsby-curso-prueba
 
 media_folder: static/assets
 public_folder: assets
 
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
+  - name: prueba
+    label: Prueba
+    folder: "src/prueba"
     create: true
     fields:
       - { name: path, label: Path }
